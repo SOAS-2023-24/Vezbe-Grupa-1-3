@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.3</version>
+		<version>3.2.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>soas.currency-conversion</groupId>
-	<artifactId>CurrencyConversion</artifactId>
+	<groupId>soas.util</groupId>
+	<artifactId>util</artifactId>
 	<version>1.0.0</version>
-	<name>CurrencyConversion</name>
-	<description>Currency Conversion microservice</description>
+	<name>Util</name>
+	<description>Util library</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -24,26 +24,8 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		
-		<dependency>
-			<groupId>soas.api</groupId>
-			<artifactId>API</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>soas.util</groupId>
-			<artifactId>util</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 

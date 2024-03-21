@@ -2,15 +2,14 @@ package api.services;
 
 import java.math.BigDecimal;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-
-import api.dtos.CurrencyConversionDto;
+import org.springframework.web.bind.annotation.RequestParam;
 
 public interface CurrencyConversionService {
 
-	@GetMapping("/currency-conversion/from/{from}/to/{to}/quantity/{quantity}")
-	CurrencyConversionDto getConversion(@PathVariable String from, 
-			@PathVariable String to,
-			@PathVariable BigDecimal quantity);
+	@GetMapping("/currency-conversion")
+	ResponseEntity<?> getConversion(@RequestParam String from, 
+			@RequestParam String to,
+			@RequestParam BigDecimal quantity);
 }
