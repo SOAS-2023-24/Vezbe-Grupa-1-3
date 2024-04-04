@@ -57,6 +57,12 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 			<version>4.1.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/de.codecentric/chaos-monkey-spring-boot -->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>chaos-monkey-spring-boot</artifactId>
+			<version>3.0.2</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

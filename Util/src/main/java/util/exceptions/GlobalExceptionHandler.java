@@ -23,4 +23,11 @@ public class GlobalExceptionHandler {
 				new ExceptionModel(HttpStatus.NOT_FOUND, ex.getMessage())
 				);
 	}
+	
+	@ExceptionHandler(ServiceUnavailableException.class)
+	public ResponseEntity<?> handleUnavailableService(ServiceUnavailableException ex){
+		return ResponseEntity.status(503).body(
+				new ExceptionModel(HttpStatus.NOT_FOUND, ex.getMessage())
+				);
+	}
 }
