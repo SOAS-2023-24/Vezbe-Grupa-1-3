@@ -12,5 +12,6 @@ public interface CurrencyExchangeProxy {
 
 	@GetMapping("/currency-exchange")
 	ResponseEntity<CurrencyExchangeDto> getExchange
-			(@RequestParam String from, @RequestParam String to);
+			(@RequestParam(value = "from") String from, 
+					@RequestParam(value = "to") String to);
 }
